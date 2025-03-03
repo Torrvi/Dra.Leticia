@@ -29,7 +29,7 @@ header{
 section{
     background-image: url(foto/coluna-fundo-dra-2.png);
     background-size: cover;
-    height: 70.7vh;
+    height: 69.6vh;
     background-position: top;
     display: flex;
 }
@@ -49,7 +49,7 @@ section{
     align-items: center;
     border-radius: 15px 15px 0px 0px;    
 }
-#menu nav {
+#menu {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -65,7 +65,7 @@ section{
 }
 #menu a:hover {
     text-decoration: none;
-    background-color: white;
+    background-color: var(--cor0);
     color: black;
     flex-grow: 1;
     text-align: center;
@@ -81,11 +81,12 @@ section{
     font-size: 80%;
     margin: 10px;
 }
-
 footer{
     background-color: var(--cor4);
     color: white;
     text-align: center;
+    padding: 4px;
+    font-family: var(--font-padrao);
 }
 #logoc{
     display: flex;
@@ -114,13 +115,6 @@ footer{
         display: flex;
         align-items: center;
         border-radius: 15px 15px 0px 0px;
-    }
-    #menu a {
-        text-decoration: none;
-        color: white;
-        flex-grow: 1;
-        text-align: center;
-        padding: 13px 0px;
     }
     #area{
         background-color: var(--cor1);
