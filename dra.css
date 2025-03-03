@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+--cor0:#F2EEEB;
+--cor1:#D9CBBF;
+--cor2:#8C6249;
+--cor3:#73694D;
+--cor4:#564C46;
+
+--font-padrao: arial, verdana, helvetica, sans-serif;
+--font-primaria: 'bellota text', 'cursive';
+--font-secundaria: 'montserrat', 'cursive';
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    background-color: var(--cor4);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 200px;
+}
+section{
+    background-image: url(foto/coluna-fundo-dra-2.png);
+    background-size: cover;
+    height: 70.7vh;
+    background-position: top;
+    display: flex;
+}
+#area{
+    background-color: var(--cor1);
+    width: 450px;
+    margin: 20px;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+#menu{
+    background-color: var(--cor4);
+    width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
+    
+}
+#menu nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: var(--font-secundaria);
+    font-size: 80%;
+}
+#menu a {
+    text-decoration: none;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+    padding: 13px 0px;
+}
+#menu a:hover {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    flex-grow: 1;
+    text-align: center;
+}
+#inicio:hover{
+    border-radius: 15px 0px 0px 0px;
+}
+#fim:hover{
+    border-radius: 0px 15px 0px 0px;
+}
+#tudo{
+    font-family: var(--font-secundaria);
+    font-size: 80%;
+    margin: 10px;
+}
+
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+}
+#logoc{
+    display: flex;
+    width: 75vw;
+    max-height: 200px;
+}
+#logom, #logop{
+    display: none;
+}
+@media(max-width:716px){
+    #logoc{
+        display: none;
+    }
+    #logop{
+        display: none;
+    }
+    #logom{
+        display: block;
+        width: 60vw;
+        max-height: 200px;
+    }
+}
+@media(max-width:500px){
+    #logoc{
+        display: none;
+    }
+    #logom{
+        display: none;
+    }
+    #logop{
+        display: block;
+        width: 30vw;
+        max-height: 200px;
+    }
+}
