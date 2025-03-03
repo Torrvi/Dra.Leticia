@@ -39,6 +39,7 @@ section{
     margin: 20px;
     border-radius: 20px;
     margin-left: 5%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
 }
 #menu{
     background-color: var(--cor4);
@@ -46,9 +47,7 @@ section{
     height: 40px;
     display: flex;
     align-items: center;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
-    
+    border-radius: 15px 15px 0px 0px;    
 }
 #menu nav {
     display: flex;
@@ -93,7 +92,7 @@ footer{
     width: 75vw;
     max-height: 200px;
 }
-#logom, #logop{
+#logom, #logop,.libe{
     display: none;
 }
 @media(max-width:716px){
@@ -115,7 +114,6 @@ footer{
         display: flex;
         align-items: center;
         border-radius: 15px 15px 0px 0px;
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
     }
     #menu a {
         text-decoration: none;
@@ -123,5 +121,18 @@ footer{
         flex-grow: 1;
         text-align: center;
         padding: 13px 0px;
+    }
+    #area{
+        background-color: var(--cor1);
+        width: 350px;
+        margin: 20px;
+        border-radius: 20px;
+        margin-left: 5%;
+    }
+    .libem{
+        display: none;
+    }
+    .libe{
+        display: block;
     }
 }
