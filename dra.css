@@ -35,22 +35,19 @@ section{
 }
 #area{
     background-color: var(--cor1);
-    width: 31.51vw;
-    min-width: 300px;
+    width: 450px;
     margin: 20px;
     border-radius: 20px;
     margin-left: 5%;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.774);
 }
 #menu{
     background-color: var(--cor4);
-    width: 31.51vw;
-    min-width: 300px;
+    width: 450px;
     height: 40px;
     display: flex;
     align-items: center;
     border-radius: 15px 15px 0px 0px;
-    
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
     
 }
 #menu nav {
@@ -110,5 +107,21 @@ footer{
         display: block;
         width: 60vw;
         max-height: 200px;
+    }
+    #menu{
+        background-color: var(--cor4);
+        width: 350px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-radius: 15px 15px 0px 0px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.774);
+    }
+    #menu a {
+        text-decoration: none;
+        color: white;
+        flex-grow: 1;
+        text-align: center;
+        padding: 13px 0px;
     }
 }
