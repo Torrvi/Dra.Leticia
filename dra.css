@@ -17,16 +17,20 @@
     padding: 0px;
     margin: 0px;
 }
-body{
-    margin: 0px;
-    padding: 0px;
-}
 header{
     background-color: var(--cor4);
     display: flex;
     justify-content:center;
     align-items: center;
     min-height: 170px;
+}
+#logoc{
+    display: flex;
+    width: 75vw;
+    max-height: 200px;
+}
+#logom, #logop,.libe{
+    display: none;
 }
 section{
     background-image: url(foto/coluna-fundo-dra-2.png);
@@ -81,7 +85,7 @@ section{
 #tudo{
     font-family: var(--font-padrao);
     font-size: 90%;
-    margin: 10px 15px;
+    margin: 12px 25px 0px 20px;
     text-indent: 15px;
     display: flex;
     text-align: justify;
@@ -96,7 +100,11 @@ section{
     margin: 0px 0px 0px 10px;
 }
 strong{
-   color: rgb(3, 85, 3); 
+   color: rgb(7, 133, 7); 
+}
+#whats{
+    padding-top: 15px;
+    text-indent: 0px;
 }
 footer{
     background-color: var(--cor4);
@@ -104,14 +112,6 @@ footer{
     text-align: center;
     padding: 4px;
     font-family: var(--font-padrao);
-}
-#logoc{
-    display: flex;
-    width: 75vw;
-    max-height: 200px;
-}
-#logom, #logop,.libe{
-    display: none;
 }
 @media(max-width:583px){
     #logoc{
@@ -148,10 +148,7 @@ footer{
     .libe{
         display: block;
     }
-    #quiroimg{
-        display: none;
-    }
-    #libeimg{
-        display: none;
+    #fisi{
+        text-align: left;
     }
 }
