@@ -11,9 +11,4 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrar('apres');
 });
 
-alert("Esta mulher é casada!");
-alert("E mt bem casada!");
-alert("Tira o olho arrombado!");
-
-
 
