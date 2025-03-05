@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 :root{
 --cor0:#F2EEEB;
@@ -7,7 +9,7 @@
 --cor3:#73694D;
 --cor4:#564C46;
 
---font-padrao: arial, verdana, helvetica, sans-serif;
+--font-padrao: 'nunito', sans-serif;
 --font-primaria: 'bellota text', 'cursive';
 --font-secundaria: 'montserrat', 'cursive';
 }
@@ -24,12 +26,12 @@ header{
     display: flex;
     justify-content:center;
     align-items: center;
-    min-height: 200px;
+    min-height: 170px;
 }
 section{
     background-image: url(foto/coluna-fundo-dra-2.png);
     background-size: cover;
-    height: 69.6vh;
+    min-height: 73.1vh;
     background-position: top;
     display: flex;
 }
@@ -51,7 +53,7 @@ section{
 }
 #menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     font-family: var(--font-secundaria);
     font-size: 80%;
@@ -63,23 +65,38 @@ section{
     text-align: center;
     padding: 13px 0px;
 }
-#menu a:hover {
+#menu a:hover, #menu a:focus {
     text-decoration: none;
     background-color: var(--cor0);
     color: black;
     flex-grow: 1;
     text-align: center;
 }
-#inicio:hover{
+#inicio:hover,#inicio:focus{
     border-radius: 15px 0px 0px 0px;
 }
-#fim:hover{
+#fim:hover,#fim:focus{
     border-radius: 0px 15px 0px 0px;
 }
 #tudo{
-    font-family: var(--font-secundaria);
-    font-size: 80%;
-    margin: 10px;
+    font-family: var(--font-padrao);
+    font-size: 90%;
+    margin: 10px 15px;
+    text-indent: 15px;
+    display: flex;
+    text-align: justify;
+}
+#tudo img{
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+#quiroimg{
+    float: right;
+    width: 55px;
+    margin: 0px 0px 0px 10px;
+}
+strong{
+   color: rgb(3, 85, 3); 
 }
 footer{
     background-color: var(--cor4);
@@ -96,9 +113,12 @@ footer{
 #logom, #logop,.libe{
     display: none;
 }
-@media(max-width:716px){
+@media(max-width:583px){
     #logoc{
         display: none;
+    }
+    section{
+        min-height: 73.1vh;
     }
     #logop{
         display: none;
@@ -121,12 +141,17 @@ footer{
         width: 350px;
         margin: 20px;
         border-radius: 20px;
-        margin-left: 5%;
     }
     .libem{
         display: none;
     }
     .libe{
         display: block;
+    }
+    #quiroimg{
+        display: none;
+    }
+    #libeimg{
+        display: none;
     }
 }
